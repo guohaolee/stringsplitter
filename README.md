@@ -27,7 +27,7 @@ You can access via the swagger documentation on the link above,
 OR
 You can easily passed the string via the url as below using Curl:
 
-curl -X POST "http://localhost:8000/api/v1/stringvalidation/MSSQLhsqldbLovebeersAuthorizationPHPRunningGymmssqlJavaScript" -H "accept: application/json"
+curl -X POST "http://0.0.0.0:8000/api/v1/stringvalidation/MSSQLhsqldbLovebeersAuthorizationPHPRunningGymmssqlJavaScript" -H "accept: application/json"
 
 
 The sample returned result will be as below in a json format:
