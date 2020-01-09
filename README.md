@@ -3,7 +3,7 @@
 
 ## Main
 This is build on a Flask-RestPlus framework.
-A simple endpoint where you can make a post request with a long string without spaces.
+A simple endpoint where you can make a GET request with a long string without spaces.
 The API will split the string for you and then identify the blacklisted words which is passed
 via a file. 
 
@@ -27,7 +27,7 @@ You can access via the swagger documentation on the link above,
 OR
 You can easily passed the string via the url as below using Curl:
 
-curl -X POST "http://0.0.0.0:8000/api/v1/stringvalidation/MSSQLhsqldbLovebeersAuthorizationPHPRunningGymmssqlJavaScript" -H "accept: application/json"
+curl -X GET "http://0.0.0.0:8000/api/v1/stringvalidation/MSSQLhsqldbLovebeersAuthorizationPHPRunningGymmssqlJavaScript" -H "accept: application/json"
 
 
 The sample returned result will be as below in a json format:

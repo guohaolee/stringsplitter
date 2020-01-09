@@ -7,7 +7,7 @@ api = Namespace("stringvalidation", "String related operations")
 
 @api.route("/<string:data>")
 class StringValidation(Resource):
-    def post(self, data):
+    def get(self, data):
         """
         Pass string and return filtered result
         """
