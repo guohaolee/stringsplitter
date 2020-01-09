@@ -13,7 +13,8 @@ via a file.
 git clone https://github.com/guohaolee/stringsplitter.git
 
 # Start up the docker
-docker-compose up --build api
+cd stringsplitter
+docker-compose up --build -d
 
 # Visit the api page:
 
@@ -57,7 +58,7 @@ docker ps
 docker logs api_project_api_1
 
 # Enter to the docker container
-docker exec -it python-etl_python-etl_1 bash
+docker exec -it stringsplitter_api-string_1 bash
 
 # Exit docker container
 exit
