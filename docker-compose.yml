@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  api-string:
+    build: .
+    privileged: true
+    ports:
+      - 8000:5000
+    volumes:
+      - ${PWD}:/app

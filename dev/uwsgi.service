@@ -1,0 +1,15 @@
+[Unit]
+Description=uWSGI instance to serve Flask
+After=network.target
+
+[Service]
+User=deploy
+Group=deploy
+Type=notify
+PermissionsStartOnly=true
+WorkingDirectory=/app
+ExecStart=/usr/local/bin/uwsgi --ini /app/dev/uwsgi.ini
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
